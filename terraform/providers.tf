@@ -14,9 +14,3 @@ provider "azurerm" {
   features {}
   use_oidc = true # Forces the provider to use OIDC authentication
 }
-
-# Example object you want to create
-resource "azurerm_resource_group" "example" {
-  name     = "rg-production-resources"
-  location = "East US"
-}
